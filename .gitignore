@@ -13,3 +13,5 @@ b/
 
 core
 *~
+build/
+*.user
