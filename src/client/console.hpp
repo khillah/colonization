@@ -5,12 +5,11 @@
 #include <chrono>
 #include <set>
 
-#include "col.hpp"
-#include "env.hpp"
+#include <server/col.hpp>
+#include <server/env.hpp>
 #include "layout.hpp"
-#include "player.hpp"
+#include <server/player.hpp>
 #include "logic.hpp"
-#include "player.hpp"
 #include "runner.hpp"
 #include "random_module.hpp"
 #include "../front/front.hpp"

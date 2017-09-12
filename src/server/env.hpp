@@ -1298,9 +1298,9 @@ namespace col{
 		void clear_vision() {
 			auto dim = get_dim();
 			
-			for (int j = 0; j < dim[1]; j++)
+            for (short int j = 0; j < dim[1]; j++)
 			{
-				for (int i = 0; i < dim[0]; i++)
+                for (short int i = 0; i < dim[0]; i++)
 				{
 					get_terr({i,j}).clear_vision();
 				}

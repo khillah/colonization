@@ -3,9 +3,9 @@
 #include <chrono>
 #include <iostream>
 
-#include "../ext/format.hpp"
-#include "env.hpp"
-#include "player.hpp"
+#include <ext/format.hpp>
+#include <server/env.hpp>
+#include <server/player.hpp>
 #include "agent.hpp"
 
 namespace null_ai{

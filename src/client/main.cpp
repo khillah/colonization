@@ -21,16 +21,16 @@
 #include <vector>
 #include <map>
 
-#include "pre.hpp"
+#include <server/pre.hpp>
 
 //#include <boost/cstdint.hpp>
 #include <boost/multi_array.hpp>
 #include <boost/format.hpp>
 #include <boost/algorithm/string.hpp>
 
-#include "col.hpp"
-#include "env.hpp"
-#include "csv.hpp"
+#include <server/col.hpp>
+#include <server/env.hpp>
+#include <server/csv.hpp>
 #include "runner.hpp"
 #include "console.hpp"
 #include "server/serialize.hpp"

@@ -4,9 +4,9 @@
 #include <iostream>
 #include <random>
 
-#include "../ext/format.hpp"
-#include "env.hpp"
-#include "player.hpp"
+#include <ext/format.hpp>
+#include <server/env.hpp>
+#include <server/player.hpp>
 #include "agent.hpp"
 #include "random_module.hpp"
 #include "exts.hpp"

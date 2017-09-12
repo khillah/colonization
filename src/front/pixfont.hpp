@@ -18,8 +18,8 @@ namespace front {
 		
 		Texture img;
 		
-		int height{-1};
-		int adv{0};
+        short height{-1};
+        short adv{0};
 		
 		PixFont() = default;
 		
@@ -45,11 +45,11 @@ namespace front {
 			return (*it).second;
 		}
 
-		int get_height() const { 
+        short get_height() const {
 			return height; 
 		}
 		
-		int get_width() const { 
+        short get_width() const {
 			return height/2; 
 		}
 

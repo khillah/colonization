@@ -1,4 +1,4 @@
-#include "../ext/ext.hpp"
+#include <ext/ext.hpp>
 
 
 namespace front {
@@ -16,7 +16,7 @@ namespace front {
 
 	struct Color;
 
-	using Image = darray::darray2<Color, int16_t>;
+	using Image = darray2::darray2<Color, int16_t>;
 
 	struct Front;
 	struct Texture;

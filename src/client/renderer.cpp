@@ -239,7 +239,7 @@ namespace col {
 
 		// center
 		{
-			int i,j;
+            short i,j;
 			j = area_pos[1];
 			while (j < area_end[1] - tile_dim[1]) {
 				i = area_pos[0];
@@ -259,9 +259,9 @@ namespace col {
 
 		// bottom
 		{
-			auto src_box = b2s({0, 0}, {tile_dim[0], area_end[1] - ej});
+            auto src_box = b2s({short(0), short(0)}, {tile_dim[0], area_end[1] - ej});
 
-			int i = area_pos[0], j = ej;
+            short i = area_pos[0], j = ej;
 			while (i < area_end[0] - tile_dim[0]) {
 				win.render(tex, {i, j}, src_box);
 				i += tile_dim[0];
@@ -271,8 +271,8 @@ namespace col {
 
 		// right
 		{
-			auto src_box = b2s({0, 0}, {area_end[0] - ei, tile_dim[1]});
-			int i = ei, j = area_pos[1];
+            auto src_box = b2s({0u, 0u}, {area_end[0] - ei, tile_dim[1]});
+            short i = ei, j = area_pos[1];
 			while (j < area_end[1] - tile_dim[1]) {
 				win.render(tex, {i, j}, src_box);
 				j += tile_dim[1];
@@ -283,7 +283,7 @@ namespace col {
 		// corner
 		{
 			auto src_box = b2s({0, 0}, {area_end[0] - ei, area_end[1] - ej});
-			int i = ei, j = ej;
+            short i = ei, j = ej;
 			win.render(tex, {i, j}, src_box);
 		}
 
@@ -1686,7 +1686,8 @@ namespace col {
 					[&con, i]() { con.sel_colony_slot_id = i; }
 				);
 
-				v2s units_frame = {ly.S(25), ly.S(16)};
+                v2s units_frame = {ly.S(static_cast<short>(25)),
+                                   ly.S(static_cast<short>(16))};
 
 				// units on build
 				int n = build.units.size();

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "col.hpp"
-#include "env.hpp"
+#include <server/col.hpp>
+#include <server/env.hpp>
 #include "console.hpp"
 #include "layout.hpp"
 #include "renderer-pre.hpp"

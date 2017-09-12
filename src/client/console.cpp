@@ -1,6 +1,6 @@
 #include "console.hpp"
 
-#include "serialize.hpp"
+#include <server/serialize.hpp>
 #include "props.hpp"
 #include "renderer.hpp"
 #include "null_ai.hpp"
@@ -11,11 +11,6 @@
 
 namespace col {
 	using boost::str;
-
-
-
-	
-
 
 	uint8_t flag_id4color_name(const string &s) {
 		if (s == "red") {

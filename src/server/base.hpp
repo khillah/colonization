@@ -1,8 +1,8 @@
 #pragma once
 
 #include <array>
-#include "ext/vals.hpp"
-#include "ext/ext.hpp"
+#include <ext/vals.hpp>
+#include <ext/ext.hpp>
 #include "col.hpp"
 #include "phys.hpp"
 #include "item.hpp"
