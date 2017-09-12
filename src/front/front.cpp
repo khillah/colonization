@@ -58,12 +58,12 @@ namespace front {
 		}
 		// TODO: find way to decode directly to adress
 
-		Image r({width, height});
+        Image r({(unsigned short)(width), (unsigned short)(height)});
 
 		uint8_t * p = &pixels[0];
 		
-		for (unsigned j=0; j<height; ++j) {
-			for (unsigned i=0; i<width; ++i) {
+        for (unsigned short j=0; j<height; ++j) {
+            for (unsigned short i=0; i<width; ++i) {
 				Color c;
 				c.r = *p;
 				++p;

@@ -259,7 +259,7 @@ namespace col {
 
 		// bottom
 		{
-            auto src_box = b2s({short(0), short(0)}, {tile_dim[0], area_end[1] - ej});
+            auto src_box = b2s({(short)(0), (short)(0)}, {(short)(tile_dim[0]), (short)(area_end[1] - ej)});
 
             short i = area_pos[0], j = ej;
 			while (i < area_end[0] - tile_dim[0]) {
@@ -271,7 +271,7 @@ namespace col {
 
 		// right
 		{
-            auto src_box = b2s({0u, 0u}, {area_end[0] - ei, tile_dim[1]});
+            auto src_box = b2s({(short)(0), (short)(0)}, {(short)(area_end[0] - ei), (short)(tile_dim[1])});
             short i = ei, j = area_pos[1];
 			while (j < area_end[1] - tile_dim[1]) {
 				win.render(tex, {i, j}, src_box);
@@ -282,7 +282,7 @@ namespace col {
 
 		// corner
 		{
-			auto src_box = b2s({0, 0}, {area_end[0] - ei, area_end[1] - ej});
+            auto src_box = b2s({(short)(0), (short)(0)}, {(short)(area_end[0] - ei), (short)(area_end[1] - ej)});
             short i = ei, j = ej;
 			win.render(tex, {i, j}, src_box);
 		}
@@ -1686,8 +1686,8 @@ namespace col {
 					[&con, i]() { con.sel_colony_slot_id = i; }
 				);
 
-                v2s units_frame = {ly.S(static_cast<short>(25)),
-                                   ly.S(static_cast<short>(16))};
+                v2s units_frame = {(short)(ly.S(25)),
+                                   (short)(ly.S(16))};
 
 				// units on build
 				int n = build.units.size();
@@ -2469,7 +2469,7 @@ namespace col {
 				auto p = env.get_control(terr);
 				if (p != ControlNone) {
 					// render owner flag over colony (unit in garrison)
-					render_sprite(win, {pos[0] + ly.S(5), pos[1]}, res(win, ICON, get_control_flagicon(p)));
+                    render_sprite(win, {(short)(pos[0] + ly.S(5)), (short)(pos[1])}, res(win, ICON, get_control_flagicon(p)));
 				}
 			}
 
@@ -4100,8 +4100,8 @@ namespace col {
 			
 			// vline left of the panel
 			render_fill(win,
-				{ly.pan.pos[0] - ly.line, ly.pan.pos[1]},
-				{ly.line, ly.pan.dim[1]},
+                {(short)(ly.pan.pos[0] - ly.line), (short)(ly.pan.pos[1])},
+                {(short)(ly.line), (short)(ly.pan.dim[1])},
 				ColorBlack
 			);
 

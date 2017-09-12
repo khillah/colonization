@@ -85,8 +85,8 @@ namespace col {
 		auto dim = inn.get_dim();
 		auto out = Image(dim);
 
-		for (int j = 0; j < dim[1]; ++j) {
-			for (int i = 0; i < dim[0]; ++i) {
+        for (short j = 0; j < dim[1]; ++j) {
+            for (short i = 0; i < dim[0]; ++i) {
 				auto c = inn({i,j});
 				auto pos = v2s(i,j);
 
